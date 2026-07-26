@@ -77,6 +77,18 @@
         open-maximized = true;
       }
       {
+        matches = [ { is-window-cast-target = true; } ];
+
+        focus-ring.enable = false;
+
+        border = {
+          enable = true;
+
+          active.color = "#f4b7b9";
+          inactive.color = "#690005";
+        };
+      }
+      {
         matches = [
           { title = "Picture-in-Picture"; }
         ];

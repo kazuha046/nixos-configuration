@@ -1,15 +1,13 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-  xdg.configFile."gtk-3.0/gtk.css" = {
-    text = builtins.readFile ../../assets/gtk/3/noctalia.css;
-    force = true;
-  };
+  xdg.configFile."gtk-3.0/gtk.css".text = ''
+    @import url("file://${config.home.homeDirectory}/.config/gtk-3.0/noctalia.css");
+  '';
 
-  xdg.configFile."gtk-4.0/gtk.css" = {
-    text = builtins.readFile ../../assets/gtk/4/noctalia.css;
-    force = true;
-  };
+  xdg.configFile."gtk-4.0/gtk.css".text = ''
+    @import url("file://${config.home.homeDirectory}/.config/gtk-4.0/noctalia.css");
+  '';
 
   xdg.portal = {
     enable = true;

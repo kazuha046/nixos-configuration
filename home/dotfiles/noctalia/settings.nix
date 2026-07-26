@@ -69,6 +69,12 @@
             "neovim"
             "spicetify"
             "obs"
+            "prismlauncher"
+            "opencode"
+            "telegram"
+            "bat"
+            "obsidian"
+            "steam"
           ];
         };
       };
