@@ -31,6 +31,7 @@
     ./programs/nvim.nix
     ./programs/fzf.nix
     ./programs/handy.nix
+    ./programs/easy-effects.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

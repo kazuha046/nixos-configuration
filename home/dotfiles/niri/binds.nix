@@ -161,6 +161,11 @@
       };
 
       ### Apps
+      "Ctrl+Shift+F9" = {
+        hotkey-overlay.title = "Toggle OBS recording";
+        action = spawn "sh" "-c" "obs-cmd recording toggle";
+      };
+      
       "Mod+Return" = {
         hotkey-overlay.title = "Open terminal";
         action = terminal;

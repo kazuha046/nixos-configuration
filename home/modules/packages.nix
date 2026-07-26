@@ -27,6 +27,7 @@
     localsend
     fzf
     sqlite
+    obs-cmd
 
     # Gaming
     steam
