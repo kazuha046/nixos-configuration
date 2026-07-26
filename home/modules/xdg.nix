@@ -28,6 +28,7 @@
         default = [
           "gnome"
           "gtk"
+          "wlr"
         ];
 
         "org.freedesktop.impl.portal.FileChooser" = [ "gnome" ];
@@ -39,6 +40,7 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-gnome
+      xdg-desktop-portal-wlr
     ];
   };
 
