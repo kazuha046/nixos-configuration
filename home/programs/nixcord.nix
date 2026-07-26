@@ -1,10 +1,6 @@
-{ inputs, config, ... }:
+{ config, ... }:
 
 {
-  imports = [
-    inputs.nixcord.homeModules.nixcord
-  ];
-
   home.file.".config/Equicord/settings/quickCss.css".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/Equicord/themes/noctalia-material.theme.css";
 

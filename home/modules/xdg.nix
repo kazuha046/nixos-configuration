@@ -16,12 +16,17 @@
 
     config = {
       common = {
-        default = [ "gnome" ];
+        default = [
+          "gnome"
+          "gtk"
+        ];
 
         "org.freedesktop.impl.portal.FileChooser" = [ "gnome" ];
       };
       niri = {
         "org.freedesktop.impl.portal.FileChooser" = [ "gnome" ];
+        "org.freedesktop.impl.portal.Screencast" = [ "gnome" ];
+        "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
       };
     };
 

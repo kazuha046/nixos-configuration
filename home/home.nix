@@ -6,6 +6,7 @@
     inputs.noctalia.homeModules.default
     inputs.spicetify-nix.homeManagerModules.default
     inputs.dynamic-drpc-wayland.homeManagerModules.default
+    inputs.nixcord.homeModules.nixcord
 
     ./modules/packages.nix
     ./modules/desktop.nix
