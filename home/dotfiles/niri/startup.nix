@@ -2,7 +2,7 @@
 
 {
   programs.niri.settings.spawn-at-startup = [
-      {
+    {
       command = [
         "dbus-update-activation-environment"
         "--systemd"
