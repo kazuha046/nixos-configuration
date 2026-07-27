@@ -44,6 +44,7 @@
     wl-clipboard
     wl-clip-persist
     cliphist
+    anki
 
     # Media / wallpapers
     mpvpaper
