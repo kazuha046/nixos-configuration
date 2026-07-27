@@ -5,6 +5,8 @@
     {
       command = [
         "wl-paste"
+        "--type"
+        "text"
         "--watch"
         "cliphist"
         "store"
@@ -13,7 +15,8 @@
     {
       command = [
         "wl-paste"
-        "--type text"
+        "--type"
+        "image"
         "--watch"
         "cliphist"
         "store"
@@ -22,7 +25,11 @@
     { command = [ "noctalia" ]; }
     {
       command = [
-        "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "dbus-update-activation-environment"
+        "--systemd"
+        "DISPLAY"
+        "WAYLAND_DISPLAY"
+        "XDG_CURRENT_DESKTOP"
       ];
     }
     {
@@ -54,12 +61,6 @@
       command = [
         "nautilus"
         "--gapplication-service"
-      ];
-    }
-    {
-      command = [
-        "wl-clip-persist"
-        "--clipboard regular"
       ];
     }
     {
