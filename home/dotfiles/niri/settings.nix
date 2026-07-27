@@ -46,7 +46,7 @@ in
 
           xkb = {
             layout = "us,ru";
-            options = "grp:alt_shift_toggle";
+            options = "caps:none,grp:caps_toggle,compose:ralt";
           };
         };
 
@@ -74,6 +74,7 @@ in
         QT_QPA_PLATFORMTHEME = "xdgdesktopportal";
         QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
         SDL_VIDEODRIVER = "wayland";
+        GDK_CORE_DEVICE_EVENTS = "1";
 
         XCURSOR_THEME = pointer.name;
         XCURSOR_SIZE = toString pointer.size;

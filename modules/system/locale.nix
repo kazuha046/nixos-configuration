@@ -13,10 +13,15 @@
       "ru_RU.UTF-8/UTF-8"
       "en_GB.UTF-8/UTF-8"
     ];
+
+    inputMethod = {
+      enable = true;
+      type = "ibus";
+    };
   };
 
   services.xserver.xkb = {
     layout = "us,ru";
-    options = "grp:alt_shift_toggle,compose:ralt,ctrl:nocaps";
+    options = "caps:none,grp:caps_toggle,compose:ralt";
   };
 }

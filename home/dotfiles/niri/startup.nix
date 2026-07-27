@@ -2,6 +2,15 @@
 
 {
   programs.niri.settings.spawn-at-startup = [
+      {
+      command = [
+        "dbus-update-activation-environment"
+        "--systemd"
+        "DISPLAY"
+        "WAYLAND_DISPLAY"
+        "XDG_CURRENT_DESKTOP"
+      ];
+    }
     {
       command = [
         "wl-paste"
@@ -23,15 +32,6 @@
       ];
     }
     { command = [ "noctalia" ]; }
-    {
-      command = [
-        "dbus-update-activation-environment"
-        "--systemd"
-        "DISPLAY"
-        "WAYLAND_DISPLAY"
-        "XDG_CURRENT_DESKTOP"
-      ];
-    }
     {
       command = [
         "sh"

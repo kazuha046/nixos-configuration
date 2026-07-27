@@ -46,6 +46,8 @@
       ];
 
       userSettings = {
+        keyboard.dispatch = "keyCode";
+        
         chat.commandCenter.enabled = false;
 
         extensions.ignoreRecommendations = true;

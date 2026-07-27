@@ -8,6 +8,8 @@
       keybind = [
         "performable:ctrl+c=copy_to_clipboard"
         "ctrl+v=paste_from_clipboard"
+        "performable:ctrl+с=copy_to_clipboard"
+        "ctrl+м=paste_from_clipboard"
       ];
 
       window-padding-x = 12;

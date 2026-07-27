@@ -7,5 +7,6 @@
     DEFAULT_BROWSER = "librewolf";
     GTK_USE_PORTAL = "1";
     QT_USE_PORTAL = "1";
+    GDK_CORE_DEVICE_EVENTS = "1";
   };
 }
