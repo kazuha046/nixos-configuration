@@ -4,6 +4,7 @@
   programs.noctalia.settings.shell = {
     lang = "en";
     font_family = "TeX Gyre Heros";
+    panel_anchor_bar = "default";
 
     avatar_path = "${config.home.homeDirectory}/Pictures/Avatars/kazuha.jpg";
 
@@ -13,7 +14,7 @@
     corner_radius_scale = 2;
 
     panel = {
-      launcher_position = "bottom_center";
+      launcher_placement = "attached";
 
       open_near_click_control_center = true;
     };
@@ -52,8 +53,8 @@
       }
     ];
 
-    launcher = {
-      session_search = true;
+    launcher.providers = {
+      session.global = true;
     };
 
     screenshot = {

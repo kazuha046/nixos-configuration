@@ -1,102 +1,102 @@
 {
   xdg.configFile."noctalia/palettes/raiden-theme.json".text = builtins.toJSON {
     dark = {
-      mPrimary = "#dfb8f6";
-      mOnPrimary = "#412356";
-      mSecondary = "#d2c1d8";
-      mOnSecondary = "#382c3e";
-      mTertiary = "#f4b7b9";
-      mOnTertiary = "#4c2528";
+      mPrimary = "#d2bcfd";
+      mOnPrimary = "#38265c";
+      mSecondary = "#cdc2db";
+      mOnSecondary = "#342d40";
+      mTertiary = "#f0b7c5";
+      mOnTertiary = "#4a2530";
       mError = "#ffb4ab";
       mOnError = "#690005";
-      mSurface = "#161217";
-      mOnSurface = "#e9e0e8";
-      mSurfaceVariant = "#221e24";
-      mOnSurfaceVariant = "#cdc3ce";
-      mOutline = "#4b454d";
+      mSurface = "#151218";
+      mOnSurface = "#e7e0e8";
+      mSurfaceVariant = "#211f24";
+      mOnSurfaceVariant = "#cbc4cf";
+      mOutline = "#49454e";
       mShadow = "#000000";
-      mHover = "#f4b7b9";
-      mOnHover = "#4c2528";
+      mHover = "#f0b7c5";
+      mOnHover = "#4a2530";
 
       terminal = {
         normal = {
-          black = "#4b454d";
+          black = "#49454e";
           red = "#ffb4ab";
-          green = "#dfb8f6";
-          yellow = "#d2c1d8";
-          blue = "#f4b7b9";
-          magenta = "#dfb8f6";
-          cyan = "#d2c1d8";
-          white = "#e9e0e8";
+          green = "#d2bcfd";
+          yellow = "#cdc2db";
+          blue = "#f0b7c5";
+          magenta = "#d2bcfd";
+          cyan = "#cdc2db";
+          white = "#e7e0e8";
         };
 
         bright = {
-          black = "#978e98";
+          black = "#948f99";
           red = "#ffb4ab";
-          green = "#dfb8f6";
-          yellow = "#d2c1d8";
-          blue = "#f4b7b9";
-          magenta = "#dfb8f6";
-          cyan = "#d2c1d8";
-          white = "#e9e0e8";
+          green = "#d2bcfd";
+          yellow = "#cdc2db";
+          blue = "#f0b7c5";
+          magenta = "#d2bcfd";
+          cyan = "#cdc2db";
+          white = "#e7e0e8";
         };
 
-        foreground = "#e9e0e8";
-        background = "#161217";
-        cursor = "#e9e0e8";
-        cursorText = "#161217";
-        selectionFg = "#cdc3ce";
-        selectionBg = "#4b454d";
+        foreground = "#e7e0e8";
+        background = "#151218";
+        cursor = "#e7e0e8";
+        cursorText = "#151218";
+        selectionFg = "#cbc4cf";
+        selectionBg = "#49454e";
       };
     };
 
     light = {
-      mPrimary = "#725188";
+      mPrimary = "#67548e";
       mOnPrimary = "#ffffff";
-      mSecondary = "#675a6e";
+      mSecondary = "#635b70";
       mOnSecondary = "#ffffff";
-      mTertiary = "#815154";
+      mTertiary = "#7e525e";
       mOnTertiary = "#ffffff";
       mError = "#ba1a1a";
       mOnError = "#ffffff";
-      mSurface = "#fff7fd";
-      mOnSurface = "#1e1a20";
-      mSurfaceVariant = "#f4ebf3";
-      mOnSurfaceVariant = "#4b454d";
-      mOutline = "#cdc3ce";
+      mSurface = "#fef7ff";
+      mOnSurface = "#1d1b20";
+      mSurfaceVariant = "#f2ecf4";
+      mOnSurfaceVariant = "#49454e";
+      mOutline = "#cbc4cf";
       mShadow = "#000000";
-      mHover = "#815154";
+      mHover = "#7e525e";
       mOnHover = "#ffffff";
 
       terminal = {
         normal = {
-          black = "#eadfea";
+          black = "#e7e0eb";
           red = "#ba1a1a";
-          green = "#725188";
-          yellow = "#675a6e";
-          blue = "#815154";
-          magenta = "#dfb8f6";
-          cyan = "#d2c1d8";
-          white = "#1e1a20";
+          green = "#67548e";
+          yellow = "#635b70";
+          blue = "#7e525e";
+          magenta = "#d2bcfd";
+          cyan = "#cdc2db";
+          white = "#1d1b20";
         };
 
         bright = {
-          black = "#7c747e";
+          black = "#7a757f";
           red = "#ba1a1a";
-          green = "#725188";
-          yellow = "#675a6e";
-          blue = "#815154";
-          magenta = "#dfb8f6";
-          cyan = "#d2c1d8";
-          white = "#1e1a20";
+          green = "#67548e";
+          yellow = "#635b70";
+          blue = "#7e525e";
+          magenta = "#d2bcfd";
+          cyan = "#cdc2db";
+          white = "#1d1b20";
         };
 
-        foreground = "#1e1a20";
-        background = "#fff7fd";
-        cursor = "#1e1a20";
-        cursorText = "#fff7fd";
-        selectionFg = "#4b454d";
-        selectionBg = "#eadfea";
+        foreground = "#1d1b20";
+        background = "#fef7ff";
+        cursor = "#1d1b20";
+        cursorText = "#fef7ff";
+        selectionFg = "#49454e";
+        selectionBg = "#e7e0eb";
       };
     };
   };

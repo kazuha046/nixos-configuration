@@ -59,7 +59,7 @@
         hotkey-overlay.title = "Toggle settings";
         action = spawn "sh" "-c" "noctalia msg settings-toggle";
       };
-      "Ctrl+Space" = {
+      "Mod+Space" = {
         hotkey-overlay.title = "Toggle launcher";
         action = spawn "sh" "-c" "noctalia msg panel-toggle launcher";
       };
@@ -165,7 +165,7 @@
         hotkey-overlay.title = "Toggle OBS recording";
         action = spawn "sh" "-c" "obs-cmd recording toggle";
       };
-      
+
       "Mod+Return" = {
         hotkey-overlay.title = "Open terminal";
         action = terminal;

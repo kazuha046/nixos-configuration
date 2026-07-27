@@ -59,42 +59,42 @@
 
       palettes.noctalia = {
         # Standard colors
-        blue = "#f4b7b9";
+        blue = "#f0b7c5";
         red = "#ffb4ab";
-        green = "#dfb8f6";
-        yellow = "#d2c1d8";
-        cyan = "#d2c1d8";
-        magenta = "#dfb8f6";
-        white = "#e9e0e8";
-        black = "#4b454d";
+        green = "#d2bcfd";
+        yellow = "#cdc2db";
+        cyan = "#cdc2db";
+        magenta = "#d2bcfd";
+        white = "#e7e0e8";
+        black = "#49454e";
 
         # Extended palette
-        rosewater = "#d2c1d8";
+        rosewater = "#cdc2db";
         flamingo = "#ffb4ab";
-        pink = "#dfb8f6";
-        mauve = "#dfb8f6";
+        pink = "#d2bcfd";
+        mauve = "#d2bcfd";
         maroon = "#ffb4ab";
-        peach = "#d2c1d8";
-        teal = "#d2c1d8";
-        sky = "#d2c1d8";
-        sapphire = "#f4b7b9";
-        lavender = "#dfb8f6";
+        peach = "#cdc2db";
+        teal = "#cdc2db";
+        sky = "#cdc2db";
+        sapphire = "#f0b7c5";
+        lavender = "#d2bcfd";
 
         # Text shades
-        text = "#e9e0e8";
-        subtext1 = "#e9e0e8";
-        subtext0 = "#978e98";
+        text = "#e7e0e8";
+        subtext1 = "#e7e0e8";
+        subtext0 = "#948f99";
 
         # Surface shades
-        overlay2 = "#978e98";
-        overlay1 = "#978e98";
-        overlay0 = "#4b454d";
-        surface2 = "#4b454d";
-        surface1 = "#4b454d";
-        surface0 = "#161217";
-        base = "#161217";
-        mantle = "#161217";
-        crust = "#161217";
+        overlay2 = "#948f99";
+        overlay1 = "#948f99";
+        overlay0 = "#49454e";
+        surface2 = "#49454e";
+        surface1 = "#49454e";
+        surface0 = "#151218";
+        base = "#151218";
+        mantle = "#151218";
+        crust = "#151218";
       };
     };
   };

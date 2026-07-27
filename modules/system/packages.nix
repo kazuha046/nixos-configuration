@@ -4,6 +4,9 @@
     # Desktop / GUI base
     ghostty
     nautilus
+    sushi
+    webp-pixbuf-loader
+    nautilus-python
     gnome-text-editor
     mpv
     amberol

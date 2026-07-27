@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.noctalia = {
@@ -43,9 +43,8 @@
       };
 
       theme = {
-        mode = "dark";
-        source = "custom";
-        custom_palette = "raiden-theme";
+        source = "wallpaper";
+        wallpaper_scheme = "m3-tonal-spot";
 
         templates = {
           enable_builtin_templates = true;
@@ -198,9 +197,13 @@
           "tray"
         ];
 
-        dead_zone = {
-          scroll_down_command = "noctalia msg volume-down";
-          scroll_up_command = "noctalia msg volume-up";
+        dead_zone.actions = {
+          scroll_down = "volume-down";
+          scroll_up = "volume-up";
+          left = "panel-toggle launcher";
+          middle = "exec ${pkgs.ghostty}/bin/ghostty";
+          back = "media previous";
+          forward = "media next";
         };
       };
     };
