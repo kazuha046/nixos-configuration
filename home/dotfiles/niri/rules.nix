@@ -77,6 +77,25 @@
         open-maximized = true;
       }
       {
+        matches = [
+          { app-id = "com.ayugram.desktop"; }
+          { app-id = "^[Dd]iscord$"; }
+          { app-id = "^vesktop$"; }
+        ];
+
+        open-on-workspace = "2";
+      }
+      {
+        match = [
+          {
+            app-id = "^steam$";
+            title = "^Steam$";
+          }
+        ];
+
+        open-on-workspace = "3";
+      }
+      {
         matches = [ { is-window-cast-target = true; } ];
 
         focus-ring.enable = false;
