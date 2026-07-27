@@ -86,10 +86,10 @@
         open-on-workspace = "2";
       }
       {
-        match = [
+        matches = [
           {
-            app-id = "^steam$";
-            title = "^Steam$";
+            app-id = "^[Ss]team$";
+            title = "^[Ss]team$";
           }
         ];
 
