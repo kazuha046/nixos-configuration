@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
     nixcord.url = "github:kaylorben/nixcord";
 
     home-manager = {
@@ -68,13 +69,29 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }@inputs:
+    {
+      nixpkgs,
+      nixpkgs-stable,
+      home-manager,
+      ...
+    }@inputs:
     {
       nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
+        specialArgs = {
+          inherit inputs;
+
+          pkgs-stable = import nixpkgs-stable {
+            system = "x86_64-linux";
+            config.allowUnfree = true;
+          };
+        };
+
         modules = [
           ({ ... }: {
+            nixpkgs.config.allowUnfree = true;
+
             nixpkgs.overlays = [
               inputs.mac-style-plymouth.overlays.default
             ];
@@ -96,10 +113,6 @@
             };
           }
         ];
-
-        specialArgs = {
-          inherit inputs;
-        };
       };
     };
 }

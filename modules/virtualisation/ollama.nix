@@ -1,11 +1,10 @@
-{ pkgs, ... }:
+{ pkgs-stable, ... }:
 
 {
   services.ollama = {
     enable = true;
 
-    # package = pkgs.ollama-cuda;
-    package = pkgs.ollama;
+    package = pkgs-stable.ollama-cuda;
 
     environmentVariables = {
       LLAMA_ARG_FIT = "off";
