@@ -10,6 +10,8 @@
     gnome-text-editor
     mpv
     amberol
+    libayatana-appindicator
+    libappindicator
 
     # Filesystem / compatibility
     distrobox

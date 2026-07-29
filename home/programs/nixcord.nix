@@ -61,7 +61,6 @@
         clientTheme.enable = true;
         customRpc.enable = true;
         betterSessions.enable = true;
-        lastFmRichPresence.enable = true;
         showBadgesInChat.enable = true;
         messageLatency.enable = true;
 

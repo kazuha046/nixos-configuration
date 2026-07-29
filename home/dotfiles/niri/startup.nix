@@ -54,7 +54,7 @@
     {
       command = [
         "gtk-launch"
-        "arch-koala-clash"
+        "arch-vpn-koala-clash"
       ];
     }
     {
