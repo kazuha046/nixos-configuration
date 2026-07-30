@@ -34,6 +34,8 @@
     dotool
     ydotool
     wtype
+    virtiofsd
+    virtio-win
 
     # File previews / GUI utilities
     ffmpegthumbnailer
