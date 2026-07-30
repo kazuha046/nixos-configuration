@@ -14,6 +14,7 @@
       "input"
       "ydotool"
       "adbusers"
+      "libvirtd"
     ];
 
     shell = pkgs.fish;

@@ -23,6 +23,7 @@
     ../../modules/virtualisation/podman.nix
     ../../modules/virtualisation/ollama.nix
     ../../modules/virtualisation/docker.nix
+    ../../modules/virtualisation/kvm.nix
 
     ../../modules/programs/nix-ld.nix
     ../../modules/programs/direnv.nix
