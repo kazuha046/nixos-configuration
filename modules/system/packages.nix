@@ -37,9 +37,6 @@
     wtype
     virtiofsd
     virtio-win
-    wineWow64Packages.stable
-    winetricks
-    zenity
 
     # File previews / GUI utilities
     ffmpegthumbnailer
