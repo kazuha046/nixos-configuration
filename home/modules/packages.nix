@@ -19,6 +19,7 @@
     jetbrains.rider
     jetbrains.rust-rover
     jetbrains.datagrip
+    android-studio
     libnotify
     onlyoffice-desktopeditors
     evince
