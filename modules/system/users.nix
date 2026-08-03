@@ -15,6 +15,7 @@
       "ydotool"
       "adbusers"
       "libvirtd"
+      "kvm"
     ];
 
     shell = pkgs.fish;
