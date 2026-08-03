@@ -63,7 +63,7 @@
     };
 
     dynamic-drpc-wayland = {
-      url = "github:mrkirill046/discord-dynamic-status-wayland";
+      url = "github:kazuha046/discord-dynamic-status-wayland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

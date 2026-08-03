@@ -96,6 +96,16 @@
         open-on-workspace = "3";
       }
       {
+        matches = [
+          {
+            app-id = "com.ayugram.desktop";
+            title = "Media viewer";
+          }
+        ];
+
+        open-fullscreen = true;
+      }
+      {
         matches = [ { is-window-cast-target = true; } ];
 
         focus-ring.enable = false;

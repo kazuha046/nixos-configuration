@@ -26,13 +26,13 @@
       "locked": {
         "lastModified": 1785360618,
         "narHash": "sha256-DLNjlSLSBrN/7qx1v2k1/n5fMC3cMj1GzKHjdMUVLCE=",
-        "owner": "mrkirill046",
+        "owner": "kazuha046",
         "repo": "discord-dynamic-status-wayland",
         "rev": "ecf6f86f530804d0cc2613985f477ba42e27e317",
         "type": "github"
       },
       "original": {
-        "owner": "mrkirill046",
+        "owner": "kazuha046",
         "repo": "discord-dynamic-status-wayland",
         "type": "github"
       }
