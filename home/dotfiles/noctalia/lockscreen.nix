@@ -27,7 +27,7 @@
 
       widget = {
         "lockscreen-login-box@eDP-1" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
           cy = 620.0;
