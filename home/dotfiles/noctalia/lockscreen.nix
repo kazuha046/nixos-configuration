@@ -56,7 +56,7 @@
           box_height = 0.0;
           box_width = 0.0;
           cx = 960.0;
-          cy = 460.0;
+          cy = 420.5;
           output = "eDP-1";
           rotation = 0.0;
           type = "clock";
