@@ -7,6 +7,7 @@
     tor-browser
     chromium
     ayugram-desktop
+    hydralauncher
 
     # Dev / IDE / Tools
     vscode
