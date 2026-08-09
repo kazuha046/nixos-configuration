@@ -18,6 +18,7 @@
     ./modules/spicetify.nix
     ./modules/ddsw.nix
     ./modules/bot.nix
+    ./modules/unity.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix

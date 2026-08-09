@@ -11,13 +11,11 @@
 
     # Dev / IDE / Tools
     vscode
-    unityhub
     obsidian
     nixfmt
     nixd
     jetbrains.webstorm
     jetbrains.pycharm
-    jetbrains.rider
     jetbrains.rust-rover
     jetbrains.datagrip
     android-studio
