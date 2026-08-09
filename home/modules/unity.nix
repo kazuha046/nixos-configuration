@@ -1,22 +1,62 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
   extra-path = with pkgs; [
-    dotnet-sdk_8
+    dotnetCorePackages.sdk_8_0
+    dotnetPackages.Nuget
     mono
     msbuild
-    nuget
   ];
+
+  extra-lib = [
+    # Add any extra libraries you want accessible to Rider here
+  ];
+
+  rider = pkgs.jetbrains.rider.overrideAttrs (attrs: {
+    postInstall = ''
+      # Wrap rider with extra tools and libraries
+      mv $out/bin/rider $out/bin/.rider-toolless
+      makeWrapper $out/bin/.rider-toolless $out/bin/rider \
+        --argv0 rider \
+        --prefix PATH : "${lib.makeBinPath extra-path}" \
+        --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath extra-lib}"
+
+      # Making Unity Rider plugin work!
+      # The plugin expects the binary to be at /rider/bin/rider,
+      # with bundled files at /rider/
+      # It does this by going up two directories from the binary path
+      # Our rider binary is at $out/bin/rider, so we need to link $out/rider/ to $out/
+      shopt -s extglob
+      ln -s $out/rider/!(bin) $out/
+      shopt -u extglob
+    ''
+    + attrs.postInstall or "";
+  });
 in
 {
-  home.packages = [
-    pkgs.unityhub
+  home.file = {
+    ".local/share/applications/jetbrains-rider.desktop".source =
+      let
+        desktopFile = pkgs.makeDesktopItem {
+          name = "jetbrains-rider";
+          desktopName = "Rider";
+          exec = "\"${rider}/bin/rider\"";
+          icon = "rider";
+          type = "Application";
+          extraConfig.NoDisplay = "true";
+        };
+      in
+      "${desktopFile}/share/applications/jetbrains-rider.desktop";
+  };
 
-    (pkgs.jetbrains.rider.overrideAttrs (oldAttrs: {
-      postInstall = (oldAttrs.postInstall or "") + ''
-        wrapProgram $out/bin/rider \
-          --prefix PATH : ${pkgs.lib.makeBinPath extra-path}
-      '';
-    }))
+  home.packages = [
+    (pkgs.unityhub.override {
+      extraPkgs = fhsPkgs: [
+        fhsPkgs.harfbuzz
+        fhsPkgs.libogg
+      ];
+    })
+
+    rider
   ];
 }
