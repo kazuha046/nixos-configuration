@@ -28,6 +28,7 @@
     fzf
     sqlite
     obs-cmd
+    postman
 
     # Gaming
     steam
