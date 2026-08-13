@@ -75,6 +75,7 @@
     dust
     duf
     dex
+    lsof
 
     # Terminal things
     cava
