@@ -5,6 +5,12 @@
     hostName = "laptop";
 
     firewall = {
+      trustedInterfaces = [
+        "Meta"
+        "tun0"
+        "mihomo"
+      ];
+
       allowedTCPPorts = [
         53317
         7897
@@ -28,6 +34,8 @@
           to = 1764;
         }
       ];
+
+      checkReversePath = false;
     };
   };
 }
