@@ -17,7 +17,7 @@
     };
 
     niri = {
-      url = "github:sodiboo/niri-flake";
+      url = "github:epireyn/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -94,6 +94,7 @@
 
             nixpkgs.overlays = [
               inputs.mac-style-plymouth.overlays.default
+              inputs.niri.overlays.niri
             ];
           })
 

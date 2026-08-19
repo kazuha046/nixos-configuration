@@ -17,6 +17,11 @@
           };
 
         opacity = 0.95;
+
+        background-effect = {
+          xray = false;
+          blur = true;
+        };
       }
       {
         matches = [ { is-floating = true; } ];

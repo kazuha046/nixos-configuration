@@ -1,33 +1,14 @@
-{ config, lib, ... }:
+{ config, ... }:
 
 let
   pointer = config.home.pointerCursor;
 in
 {
-  # FUCKING SHIT NIRI-FLAKE DOESN'T SUPPORT FUCKING recent-windows PARAMETER BLYAT
-  home.file.".config/niri/config.kdl".text = ''
-    include "extra.kdl"
-    include "nix-generated.kdl"
-  '';
-
-  home.file.".config/niri/extra.kdl".text = ''
-    recent-windows {
-      off
-    }
-
-    window-rule {
-      background-effect {
-        blur true
-        xray false
-      }
-    }
-  '';
-
-  xdg.configFile.niri-config.target = lib.mkForce "niri/nix-generated.kdl";
-
   programs.niri = {
     settings = {
       prefer-no-csd = true;
+
+      recent-windows.enable = false;
 
       gestures = {
         hot-corners.enable = false;
