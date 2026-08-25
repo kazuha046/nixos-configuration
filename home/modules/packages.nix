@@ -77,6 +77,7 @@
     duf
     dex
     lsof
+    dig
 
     # Terminal things
     cava
