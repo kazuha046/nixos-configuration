@@ -1,15 +1,5 @@
 {
     "input": {
-        "autogain#0": {
-            "bypass": false,
-            "force-silence": false,
-            "input-gain": 0.0,
-            "maximum-history": 15,
-            "output-gain": 0.0,
-            "reference": "Geometric Mean (MSI)",
-            "silence-threshold": -45.0,
-            "target": -18.0
-        },
         "blocklist": [],
         "compressor#0": {
             "attack": 20.0,
@@ -51,9 +41,9 @@
         "deesser#0": {
             "bypass": false,
             "detection": "RMS",
-            "f1-freq": 4000.0,
+            "f1-freq": 5000.0,
             "f1-level": 0.0,
-            "f2-freq": 6500.0,
+            "f2-freq": 6800.0,
             "f2-level": 18.0,
             "f2-q": 1.0,
             "input-gain": 0.0,
@@ -61,9 +51,9 @@
             "makeup": 0.0,
             "mode": "Split",
             "output-gain": 0.0,
-            "ratio": 5.0,
+            "ratio": 3.0,
             "sc-listen": false,
-            "threshold": -24.0
+            "threshold": -18.0
         },
         "equalizer#0": {
             "balance": 0.0,
@@ -76,7 +66,7 @@
                     "gain": 0.0,
                     "mode": "RLC (BT)",
                     "mute": false,
-                    "q": 4.36,
+                    "q": 0.71,
                     "slope": "x1",
                     "solo": false,
                     "type": "Hi-pass",
@@ -127,7 +117,7 @@
                     "gain": 0.0,
                     "mode": "RLC (BT)",
                     "mute": false,
-                    "q": 4.36,
+                    "q": 0.71,
                     "slope": "x1",
                     "solo": false,
                     "type": "Hi-pass",
@@ -170,15 +160,15 @@
             "split-channels": false
         },
         "gate#0": {
-            "attack": 10.0,
+            "attack": 2.0,
             "bypass": false,
-            "curve-threshold": -35.0,
+            "curve-threshold": -40.0,
             "curve-zone": -6.0,
             "dry": -80.01,
             "hpf-frequency": 10.0,
             "hpf-mode": "Off",
-            "hysteresis": false,
-            "hysteresis-threshold": -12.0,
+            "hysteresis": true,
+            "hysteresis-threshold": -45.0,
             "hysteresis-zone": -6.0,
             "input-gain": 0.0,
             "input-to-link": -80.01,
@@ -189,10 +179,10 @@
             "lpf-mode": "Off",
             "makeup": 0.0,
             "output-gain": 0.0,
-            "reduction": -24.0,
+            "reduction": -30.0,
             "release": 200.0,
             "sidechain": {
-                "lookahead": 0.0,
+                "lookahead": 5.0,
                 "mode": "Peak",
                 "preamp": 0.0,
                 "reactivity": 10.0,
@@ -232,36 +222,17 @@
             "stereo-link": 100.0,
             "threshold": -1.5
         },
-        "pitch#0": {
-            "anti-alias": false,
-            "bypass": false,
-            "cents": -50.0,
-            "dry": -100.0,
-            "input-gain": 0.0,
-            "octaves": 0.0,
-            "output-gain": 0.0,
-            "overlap-length": 8,
-            "quick-seek": false,
-            "rate-difference": 0.0,
-            "seek-window": 15,
-            "semitones": 0.0,
-            "sequence-length": 40,
-            "tempo-difference": 0.0,
-            "wet": 0.0
-        },
         "plugins_order": [
             "rnnoise#0",
             "gate#0",
             "equalizer#0",
             "deesser#0",
-            "pitch#0",
             "compressor#0",
-            "autogain#0",
             "limiter#0"
         ],
         "rnnoise#0": {
             "bypass": false,
-            "enable-vad": true,
+            "enable-vad": false,
             "input-gain": 0.0,
             "model-name": "\"\"",
             "output-gain": 0.0,
