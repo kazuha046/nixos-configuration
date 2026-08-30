@@ -24,7 +24,6 @@
       obs-pipewire-audio-capture
       obs-vkcapture
       obs-source-record
-      obs-move-transition
       obs-vaapi
       obs-gstreamer
       input-overlay
