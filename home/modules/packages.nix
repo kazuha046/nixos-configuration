@@ -1,115 +1,119 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    # Browsers / Internet
-    librewolf
-    tor-browser
-    chromium
-    ayugram-desktop
-    hydralauncher
+  home.packages =
+    (with pkgs; [
+      # Dev / IDE / Tools
+      vscode
+      obsidian
+      nixfmt
+      nixd
+      jetbrains.webstorm
+      jetbrains.pycharm
+      jetbrains.rust-rover
+      jetbrains.datagrip
+      android-studio
+      libnotify
+      onlyoffice-desktopeditors
+      evince
+      hyprpicker
+      opencode
+      localsend
+      sqlite
+      obs-cmd
+      postman
 
-    # Dev / IDE / Tools
-    vscode
-    obsidian
-    nixfmt
-    nixd
-    jetbrains.webstorm
-    jetbrains.pycharm
-    jetbrains.rust-rover
-    jetbrains.datagrip
-    android-studio
-    libnotify
-    onlyoffice-desktopeditors
-    evince
-    hyprpicker
-    opencode
-    localsend
-    fzf
-    sqlite
-    obs-cmd
-    postman
+      # Clipboard / productivity
+      wl-clipboard
+      wl-clip-persist
+      cliphist
+      anki
 
-    # Gaming
-    steam
-    steam-run
-    gamescope
+      # CLI tools
+      ripgrep
+      fd
+      bat
+      eza
+      jq
+      unzip
+      zip
+      curl
+      wget
+      btop
+      dust
+      duf
+      dex
+      lsof
+      dig
 
-    # Mods / tweaks
-    gamemode
-    mangohud
-    goverlay
-    vkbasalt
+      # Terminal things
+      cava
+      cmatrix
+      nyancat
+      unimatrix
+      asciiquarium
+      cbonsai
+      tty-clock
+      bb
+      bastet
+      glow
+      pipes-rs
+      lavat
+      mapscii
+      sl
+      hollywood
 
-    # Clipboard / productivity
-    wl-clipboard
-    wl-clip-persist
-    cliphist
-    anki
+      # Icons / themes
+      adwaita-icon-theme
+      hicolor-icon-theme
 
-    # Media / wallpapers
-    mpvpaper
-    easyeffects
-    pavucontrol
-    gimp
+      (makeDesktopItem {
+        name = "dex";
+        desktopName = "Dex Launcher";
+        exec = "dex %f";
+        terminal = false;
+        mimeTypes = [ "application/x-desktop" ];
+      })
 
-    # GUI system tools
-    networkmanagerapplet
-    blueman
-    mission-center
-    scrcpy
+      (writeShellScriptBin "pineconemc" ''
+        exec "$HOME/Applications/PineconeMC-Linux-x86_64.AppImage" "$@"
+      '')
+    ])
+    ++ (with pkgs.unstable; [
+      # Dev / IDE / Tools
+      fzf
 
-    # Bluetooth stack (user tools)
-    bluez
+      # Browsers / Internet
+      librewolf
+      tor-browser
+      chromium
+      ayugram-desktop
+      hydralauncher
 
-    # CLI tools
-    ripgrep
-    fd
-    bat
-    eza
-    jq
-    unzip
-    zip
-    curl
-    wget
-    btop
-    dust
-    duf
-    dex
-    lsof
-    dig
+      # GUI system tools
+      networkmanagerapplet
+      blueman
+      mission-center
+      scrcpy
 
-    # Terminal things
-    cava
-    cmatrix
-    nyancat
-    unimatrix
-    asciiquarium
-    cbonsai
-    tty-clock
-    bb
-    bastet
-    glow
-    pipes-rs
-    lavat
-    mapscii
-    sl
-    hollywood
+      # Bluetooth stack (user tools)
+      bluez
 
-    # Icons / themes
-    adwaita-icon-theme
-    hicolor-icon-theme
+      # Gaming
+      steam
+      steam-run
+      gamescope
 
-    (makeDesktopItem {
-      name = "dex";
-      desktopName = "Dex Launcher";
-      exec = "dex %f";
-      terminal = false;
-      mimeTypes = [ "application/x-desktop" ];
-    })
+      # Mods / tweaks
+      gamemode
+      mangohud
+      goverlay
+      vkbasalt
 
-    (writeShellScriptBin "pineconemc" ''
-      exec "$HOME/Applications/PineconeMC-Linux-x86_64.AppImage" "$@"
-    '')
-  ];
+      # Media / wallpapers
+      mpvpaper
+      easyeffects
+      pavucontrol
+      gimp
+    ]);
 }

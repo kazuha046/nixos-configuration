@@ -1,8 +1,9 @@
 {
   virtualisation.docker = {
     enable = true;
-
     autoPrune.enable = true;
+
+    daemon.settings.features.cdi = true;
 
     daemon.settings = {
       "registry-mirrors" = [

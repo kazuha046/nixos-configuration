@@ -13,12 +13,10 @@
     ../../modules/system/state.nix
     ../../modules/system/environment.nix
 
-    # ../../modules/desktop/sddm.nix
     ../../modules/desktop/graphics.nix
     ../../modules/desktop/niri.nix
     ../../modules/desktop/greetd.nix
     ../../modules/desktop/fonts.nix
-    ../../modules/desktop/hyprland.nix
 
     ../../modules/virtualisation/podman.nix
     ../../modules/virtualisation/ollama.nix
