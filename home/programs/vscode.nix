@@ -10,6 +10,8 @@
     enable = true;
     mutableExtensionsDir = true;
 
+    package = pkgs.unstable.vscode;
+
     profiles.default = {
       keybindings = [
         {
@@ -47,7 +49,7 @@
 
       userSettings = {
         keyboard.dispatch = "keyCode";
-        
+
         chat.commandCenter.enabled = false;
 
         extensions.ignoreRecommendations = true;

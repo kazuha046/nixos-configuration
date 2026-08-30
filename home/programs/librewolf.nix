@@ -1,6 +1,10 @@
+{ pkgs, ... }:
+
 {
   programs.librewolf = {
     enable = true;
+
+    package = pkgs.unstable.librewolf;
 
     settings = {
       "browser.startup.page" = 3;

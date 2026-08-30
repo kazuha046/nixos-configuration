@@ -4,7 +4,6 @@
   home.packages =
     (with pkgs; [
       # Dev / IDE / Tools
-      vscode
       obsidian
       nixfmt
       nixd
@@ -17,8 +16,6 @@
       onlyoffice-desktopeditors
       evince
       hyprpicker
-      opencode
-      localsend
       sqlite
       obs-cmd
       postman
@@ -81,6 +78,9 @@
     ])
     ++ (with pkgs.unstable; [
       # Dev / IDE / Tools
+      vscode
+      opencode
+      localsend
       fzf
 
       # Browsers / Internet

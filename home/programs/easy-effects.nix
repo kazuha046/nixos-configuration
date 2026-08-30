@@ -1,6 +1,11 @@
+{ pkgs, ... }:
+
 {
   services.easyeffects = {
     enable = true;
+
+    package = pkgs.unstable.easyeffects;
+
     preset = "fifine_am8";
   };
 

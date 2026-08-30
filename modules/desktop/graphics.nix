@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ config, ... }:
 
 {
   hardware.nvidia-container-toolkit.enable = true;
@@ -6,11 +6,6 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-
-    extraPackages = with pkgs; [
-      nvidia-vaapi-driver
-      egl-wayland
-    ];
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
