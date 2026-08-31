@@ -21,7 +21,7 @@
         insmod part_gpt
         insmod fat
 
-        search --fs-uuid --set=root 20D1-CA46
+        search --fs-uuid --set=root 564F-7F8D
 
         chainloader /EFI/Microsoft/Boot/bootmgfw.efi
     }
