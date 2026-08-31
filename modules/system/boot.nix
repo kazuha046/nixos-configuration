@@ -10,7 +10,7 @@
     enable = true;
     device = "nodev";
     efiSupport = true;
-    useOSProber = true;
+    useOSProber = false;
     configurationLimit = 5;
 
     theme = "${pkgs.catppuccin-grub}";
