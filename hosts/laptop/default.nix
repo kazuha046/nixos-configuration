@@ -29,6 +29,7 @@
     ../../modules/programs/appimage.nix
     ../../modules/programs/ydotool.nix
     ../../modules/programs/creamlinux.nix
+    ../../modules/programs/steam.nix
 
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix
