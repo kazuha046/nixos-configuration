@@ -100,7 +100,6 @@
       bluez
 
       # Gaming
-      steam
       steam-run
       gamescope
 
