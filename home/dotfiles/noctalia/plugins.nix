@@ -76,6 +76,10 @@
       steampoacher_enabled = true;
     };
 
+    "avivbintangaringga/nix-monitor" = {
+      branch = "nixos-26.05";
+    };
+
     "yocraft/web-launcher" = {
       links = [
         "GitHub|https://github.com"

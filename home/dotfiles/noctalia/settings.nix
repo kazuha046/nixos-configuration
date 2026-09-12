@@ -5,6 +5,8 @@
     enable = true;
 
     settings = {
+      config_version = 14;
+
       calendar.enabled = true;
 
       wallpaper = {
@@ -74,6 +76,11 @@
             "bat"
             "obsidian"
             "steam"
+            "blender"
+            "gimp"
+            "glow"
+            "hyprtoolkit"
+            "papirus-icons"
           ];
         };
       };

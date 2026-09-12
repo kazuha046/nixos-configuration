@@ -30,8 +30,10 @@
           box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
-          cy = 620.0;
+          cy = 670.0;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "login_box";
 
@@ -48,6 +50,7 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = false;
           };
         };
@@ -56,8 +59,10 @@
           box_height = 0.0;
           box_width = 0.0;
           cx = 960.0;
-          cy = 420.5;
+          cy = 476.0;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "clock";
 
@@ -80,6 +85,8 @@
           cx = 116.0;
           cy = 996.5;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "sysmon";
 
@@ -100,6 +107,8 @@
           cx = 116.0;
           cy = 819.5;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "weather";
 
@@ -117,6 +126,8 @@
           cx = 1784.0;
           cy = 990.0;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "volume";
 
@@ -131,6 +142,8 @@
           cx = 1790.0;
           cy = 788.5;
           output = "eDP-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "sticker";
 
