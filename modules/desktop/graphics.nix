@@ -1,7 +1,10 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
-  hardware.nvidia-container-toolkit.enable = true;
+  hardware.nvidia-container-toolkit = {
+    enable = true;
+    package = pkgs.unstable.nvidia-container-toolkit;
+  };
 
   hardware.graphics = {
     enable = true;
@@ -31,6 +34,6 @@
     open = false;
     nvidiaSettings = true;
 
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 }
