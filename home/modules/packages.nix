@@ -78,10 +78,10 @@
     ])
     ++ (with pkgs.unstable; [
       # Dev / IDE / Tools
-      vscode
       opencode
       localsend
       fzf
+      qbittorrent
 
       # Browsers / Internet
       librewolf
