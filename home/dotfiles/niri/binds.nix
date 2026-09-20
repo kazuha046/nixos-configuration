@@ -141,7 +141,7 @@
       };
 
       # Window management
-      "Mod+Tab" = {
+      "Alt+Tab" = {
         hotkey-overlay.title = "Show window switcher";
         action = spawn "sh" "-c" "noctalia msg window-switcher";
       };
@@ -217,7 +217,7 @@
       "Mod+W".action = toggle-column-tabbed-display;
       "Mod+F".action = toggle-window-floating;
       "Mod+O".action = toggle-overview;
-      "Alt+Tab".action = switch-focus-between-floating-and-tiling;
+      "Mod+Tab".action = switch-focus-between-floating-and-tiling;
       "Mod+Ctrl+C".action = center-visible-columns;
 
       # Fullscreen window

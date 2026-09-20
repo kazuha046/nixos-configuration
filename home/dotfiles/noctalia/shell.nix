@@ -20,6 +20,7 @@
     };
 
     greeter_sync.auto_sync = true;
+    window_switcher.mru = true;
 
     session.actions = [
       {
