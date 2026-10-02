@@ -9,7 +9,7 @@
       name = "cordial";
       desktopName = "Cordial";
       comment = "Roblox runtime for Linux";
-      exec = "${config.home.homeDirectory}/Applications/Cordial_x86_64.AppImage";
+      exec = "steam-run  ${config.home.homeDirectory}/Applications/Cordial_x86_64.AppImage";
       icon = "cordial";
       terminal = false;
       categories = [ "Game" ];
