@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ pkgs-unstable, ... }:
 
 {
   programs.fzf = {
     enable = true;
     enableFishIntegration = true;
 
-    package = pkgs.unstable.fzf;
+    package = pkgs-unstable.fzf;
   };
 }

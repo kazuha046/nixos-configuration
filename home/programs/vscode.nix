@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs-unstable, ... }:
 
 {
   home.file.".vscode/extensions/mrkir.raiden-theme" = {
@@ -10,7 +10,7 @@
     enable = true;
     mutableExtensionsDir = true;
 
-    package = pkgs.unstable.vscode;
+    package = pkgs-unstable.vscode;
 
     profiles.default = {
       keybindings = [
@@ -26,7 +26,7 @@
         }
       ];
 
-      extensions = with pkgs.vscode-extensions; [
+      extensions = with pkgs-unstable.vscode-extensions; [
         ms-python.python
         ms-dotnettools.csharp
         rust-lang.rust-analyzer

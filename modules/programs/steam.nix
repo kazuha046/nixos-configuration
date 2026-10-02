@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs-unstable, ... }:
 
 {
   programs.steam = {
@@ -8,6 +8,6 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
 
-    package = pkgs.steam;
+    package = pkgs-unstable.steam;
   };
 }

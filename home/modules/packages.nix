@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 
 {
   home.packages =
@@ -76,7 +76,7 @@
         exec "$HOME/Applications/PineconeMC-Linux-x86_64.AppImage" "$@"
       '')
     ])
-    ++ (with pkgs.unstable; [
+    ++ (with pkgs-unstable; [
       # Dev / IDE / Tools
       opencode
       localsend

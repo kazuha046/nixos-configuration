@@ -76,12 +76,20 @@
       home-manager,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+
+      pkgs-unstable = import nixpkgs-unstable {
+        inherit system;
+        config.allowUnfree = true;
+      };
+    in
     {
       nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        inherit system;
 
         specialArgs = {
-          inherit inputs;
+          inherit inputs pkgs-unstable;
         };
 
         modules = [
@@ -93,10 +101,7 @@
               inputs.niri.overlays.niri
 
               (final: prev: {
-                unstable = import nixpkgs-unstable {
-                  system = "x86_64-linux";
-                  config.allowUnfree = true;
-                };
+                unstable = pkgs-unstable;
               })
             ];
           })
@@ -112,7 +117,7 @@
               users.mrkir = import ./home/home.nix;
 
               extraSpecialArgs = {
-                inherit inputs;
+                inherit inputs pkgs-unstable;
               };
             };
           }

@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs-unstable, ... }:
 
 {
   hardware.nvidia-container-toolkit = {
     enable = true;
-    package = pkgs.unstable.nvidia-container-toolkit;
+    package = pkgs-unstable.nvidia-container-toolkit;
   };
 
   hardware.graphics = {
