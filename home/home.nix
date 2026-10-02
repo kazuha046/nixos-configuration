@@ -34,6 +34,7 @@
     ./programs/handy.nix
     ./programs/easy-effects.nix
     ./programs/librewolf.nix
+    ./programs/cordial.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

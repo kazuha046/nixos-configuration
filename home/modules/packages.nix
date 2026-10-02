@@ -43,6 +43,9 @@
       lsof
       dig
 
+      # Mods / tweaks
+      goverlay
+
       # Terminal things
       cava
       cmatrix
@@ -106,7 +109,6 @@
       # Mods / tweaks
       gamemode
       mangohud
-      goverlay
       vkbasalt
 
       # Media / wallpapers
