@@ -69,6 +69,7 @@
       bun
       dotnet-sdk_9
       jdk21
+      jdk25
       go
       qemu
     ])
