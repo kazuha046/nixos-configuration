@@ -36,5 +36,6 @@
     ../../modules/services/bluetooth.nix
     ../../modules/services/gnome.nix
     ../../modules/services/pipewire.nix
+    ../../modules/services/printer.nix
   ];
 }

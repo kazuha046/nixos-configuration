@@ -30,7 +30,6 @@
         relationshipNotifier.enable = true;
         serverInfo.enable = true;
         showConnections.enable = true;
-        silentTyping.enable = true;
         typingIndicator.enable = true;
         viewIcons.enable = true;
         voiceDownload.enable = true;
@@ -41,7 +40,6 @@
         serverListIndicators.enable = true;
         betterRoleContext.enable = true;
         betterSettings.enable = true;
-        messageLogger.enable = true;
         copyFileContents.enable = true;
         copyEmojiMarkdown.enable = true;
         reverseImageSearch.enable = true;
