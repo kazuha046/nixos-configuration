@@ -53,6 +53,7 @@
       "x-scheme-handler/about" = [ "librewolf.desktop" ];
       "application/xhtml+xml" = [ "librewolf.desktop" ];
       "application/x-desktop" = [ "dex.desktop" ];
+      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
 
       "image/jpeg" = [ "org.gnome.Loupe.desktop" ];
       "image/png" = [ "org.gnome.Loupe.desktop" ];
