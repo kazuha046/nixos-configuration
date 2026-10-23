@@ -26,11 +26,11 @@
       postman
 
       # Craft Apps
-      craftapps.packages.${pkgs.system}.photocraft
-      craftapps.packages.${pkgs.system}.vectorcraft
-      craftapps.packages.${pkgs.system}.effectcraft
-      craftapps.packages.${pkgs.system}.filmcraft
-      craftapps.packages.${pkgs.system}.wordcraft
+      craftapps.packages.${pkgs.stdenv.hostPlatform.system}.photocraft
+      craftapps.packages.${pkgs.stdenv.hostPlatform.system}.vectorcraft
+      craftapps.packages.${pkgs.stdenv.hostPlatform.system}.effectcraft
+      craftapps.packages.${pkgs.stdenv.hostPlatform.system}.filmcraft
+      craftapps.packages.${pkgs.stdenv.hostPlatform.system}.wordcraft
 
       # Clipboard / productivity
       wl-clipboard

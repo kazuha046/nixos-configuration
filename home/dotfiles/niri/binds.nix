@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   programs.niri.settings.binds =
@@ -7,6 +12,7 @@
     let
       fullscreen-screenshot = spawn "sh" "-c" "noctalia msg screenshot-fullscreen";
       terminal = spawn "${pkgs.ghostty}/bin/ghostty";
+      handy = "${inputs.handy.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/handy";
     in
     {
       ### Noctalia shell
@@ -201,9 +207,7 @@
 
       "Mod+Shift+H" = {
         hotkey-overlay.title = "Toggle handy transcription";
-        action =
-          spawn "sh" "-c"
-            "${config.home.homeDirectory}/Applications/Handy_amd64.AppImage --toggle-transcription";
+        action = spawn "sh" "-c" "${handy} --toggle-transcription";
       };
 
       ### Window management

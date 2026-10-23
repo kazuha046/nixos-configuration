@@ -20,6 +20,7 @@
     ./modules/ddsw.nix
     ./modules/bot.nix
     ./modules/unity.nix
+    ./modules/handy.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix
