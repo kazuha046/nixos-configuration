@@ -1,5 +1,3 @@
-{ config, ... }:
-
 {
   programs.niri.settings.spawn-at-startup = [
     {
@@ -61,13 +59,6 @@
       command = [
         "nautilus"
         "--gapplication-service"
-      ];
-    }
-    {
-      command = [
-        "sh"
-        "-c"
-        "sleep 5 && ${config.home.homeDirectory}/Applications/Handy_amd64.AppImage --start-hidden"
       ];
     }
     {

@@ -6,6 +6,8 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     nixcord.url = "github:kaylorben/nixcord";
+    handy.url = "github:cjpais/Handy";
+    craftapps.url = "github:olafkfreund/nix-craftapps";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -74,6 +76,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      craftapps,
       ...
     }@inputs:
     let
@@ -96,6 +99,17 @@
           ({ ... }: {
             nixpkgs.config.allowUnfree = true;
 
+            nix.settings = {
+              substituters = [
+                "https://cache.nixos.org/"
+                "https://nix-community.cachix.org"
+              ];
+
+              trusted-public-keys = [
+                "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+              ];
+            };
+
             nixpkgs.overlays = [
               inputs.mac-style-plymouth.overlays.default
               inputs.niri.overlays.niri
@@ -117,7 +131,7 @@
               users.mrkir = import ./home/home.nix;
 
               extraSpecialArgs = {
-                inherit inputs pkgs-unstable;
+                inherit inputs pkgs-unstable craftapps;
               };
             };
           }

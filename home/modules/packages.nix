@@ -1,4 +1,9 @@
-{ pkgs, pkgs-unstable, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  craftapps,
+  ...
+}:
 
 {
   home.packages =
@@ -19,6 +24,13 @@
       sqlite
       obs-cmd
       postman
+
+      # Craft Apps
+      craftapps.packages.${pkgs.system}.photocraft
+      craftapps.packages.${pkgs.system}.vectorcraft
+      craftapps.packages.${pkgs.system}.effectcraft
+      craftapps.packages.${pkgs.system}.filmcraft
+      craftapps.packages.${pkgs.system}.wordcraft
 
       # Clipboard / productivity
       wl-clipboard

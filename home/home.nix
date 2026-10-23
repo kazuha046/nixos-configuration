@@ -7,6 +7,7 @@
     inputs.spicetify-nix.homeManagerModules.default
     inputs.dynamic-drpc-wayland.homeManagerModules.default
     inputs.nixcord.homeModules.nixcord
+    inputs.handy.homeManagerModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix
@@ -31,7 +32,6 @@
     ./programs/obs.nix
     ./programs/nvim.nix
     ./programs/fzf.nix
-    ./programs/handy.nix
     ./programs/easy-effects.nix
     ./programs/librewolf.nix
     ./programs/cordial.nix
