@@ -80,7 +80,10 @@
       # Desktop / GUI base
       ghostty
       nautilus
+      gnome-calendar
+      gnome-control-center
       sushi
+      geary
       webp-pixbuf-loader
       nautilus-python
       gnome-text-editor
