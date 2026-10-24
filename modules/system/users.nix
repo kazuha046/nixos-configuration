@@ -16,6 +16,7 @@
       "adbusers"
       "libvirtd"
       "kvm"
+      "video"
     ];
 
     shell = pkgs.fish;
