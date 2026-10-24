@@ -38,6 +38,10 @@ in
       appearance = {
         hide_logo = true;
       };
+
+      clock = {
+        time_format = "{:%I:%M %p}";
+      };
     };
   };
 }

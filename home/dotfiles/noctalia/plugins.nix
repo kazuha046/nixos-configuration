@@ -20,6 +20,18 @@
       "apex077/eyecare"
       "alexander/game-launcher"
       "yocraft/web-launcher"
+      "reaperhound/ambient-sounds"
+      "hy4ri/github-notifications"
+      "alexmnrs/github-activity"
+      "andrewdems/printers"
+      "marccvictoria/llamanager"
+      "icefish/phone-connect"
+      "nightwatch75/dns-switcher"
+      "thaer99ob/default-apps"
+      "tphilippot/git_companion"
+      "yocraft/qrcode"
+      "nomadcxx/gamer-mode"
+      "cleboost/jetbrains-provider"
     ];
 
     source = [
@@ -46,12 +58,42 @@
       launcher_exec_command = "pineconemc";
     };
 
+    "thaer99ob/default-apps" = {
+      manager_open_near_click = true;
+      manager_placement = "attached";
+    };
+
+    "yocraft/qrcode" = {
+      panel_open_near_click = true;
+      panel_placement = "attached";
+    };
+
+    "nomadcxx/gamer-mode" = {
+      main_open_near_click = true;
+    };
+
+    "marccvictoria/llamanager" = {
+      panel_placement = "attached";
+    };
+
+    "icefish/phone-connect" = {
+      details_floating_open_near_click = true;
+
+      details_floating_placement = "attached";
+      details_widget_placement = "attached";
+    };
+
     "kenn/keybind-cheatsheet" = {
       cheatsheet_placement = "attached";
     };
 
     "8bury/mini-docker" = {
       manager_placement = "attached";
+    };
+
+    "reaperhound/ambient-sounds" = {
+      main_layer = "overlay";
+      main_placement = "attached";
     };
 
     "avivbintangaringga/nix-monitor" = {
@@ -74,6 +116,9 @@
     "alexander/game-launcher" = {
       browser_placement = "attached";
       steampoacher_enabled = true;
+      browser_open_near_click = true;
+      original_open_near_click = true;
+      original_placement = "attached";
     };
 
     "avivbintangaringga/nix-monitor" = {

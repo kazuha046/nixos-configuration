@@ -74,6 +74,7 @@
       jdk25
       go
       qemu
+      gh
     ])
     ++ (with pkgs-unstable; [
       # Desktop / GUI base

@@ -38,10 +38,30 @@
         };
       };
 
+      notification = {
+        layer = "overlay";
+      };
+
       audio = {
         enable_overdrive = true;
         enable_sounds = true;
         sound_volume = 1;
+      };
+
+      bluetooth = {
+        connect_when_enabled = true;
+      };
+
+      system.monitor = {
+        cpu_freq_activity_threshold = 3.0;
+        cpu_temp_activity_threshold = 70;
+        cpu_temp_critical_threshold = 90;
+        gpu_temp_critical_threshold = 80;
+        gpu_usage_activity_threshold = 10;
+        gpu_usage_critical_threshold = 90;
+        gpu_vram_activity_threshold = 30;
+        net_rx_critical_threshold = 12.0;
+        net_tx_critical_threshold = 12.0;
       };
 
       theme = {
@@ -88,9 +108,13 @@
       dock = {
         enabled = true;
 
+        layer = "overlay";
+
         active_monitor_only = true;
         show_instance_count = true;
         show_dots = false;
+        reserve_space = false;
+        smart_auto_hide = true;
 
         main_axis_padding = 0;
         cross_axis_padding = 0;
@@ -104,6 +128,10 @@
           "discord"
           "com.ayugram.desktop"
         ];
+      };
+
+      battery = {
+        warning_threshold = 20;
       };
 
       control_center = {

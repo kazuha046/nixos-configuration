@@ -54,7 +54,7 @@
           relative-to = "bottom-right";
 
           x = 10;
-          y = -70;
+          y = 10;
         };
       }
       {
@@ -77,28 +77,14 @@
           { app-id = "obsidian"; }
           { app-id = "^[Ss]potify$"; }
           { app-id = "org.gnome.Evince"; }
+          { app-id = "ai.storyteller.effectcraft"; }
+          { app-id = "ai.storyteller.filmcraft"; }
+          { app-id = "ai.storyteller.photocraft"; }
+          { app-id = "ai.storyteller.vectorcraft"; }
+          { app-id = "ai.storyteller.wordcraft"; }
         ];
 
         open-maximized = true;
-      }
-      {
-        matches = [
-          { app-id = "com.ayugram.desktop"; }
-          { app-id = "^[Dd]iscord$"; }
-          { app-id = "^vesktop$"; }
-        ];
-
-        open-on-workspace = "2";
-      }
-      {
-        matches = [
-          {
-            app-id = "^[Ss]team$";
-            title = "^[Ss]team$";
-          }
-        ];
-
-        open-on-workspace = "3";
       }
       {
         matches = [
@@ -109,6 +95,7 @@
         ];
 
         open-fullscreen = true;
+        open-maximized = true;
       }
       {
         matches = [ { is-window-cast-target = true; } ];
@@ -149,6 +136,7 @@
           { app-id = "org.gnome.FileRoller"; }
           { app-id = "nm-connection-editor"; }
           { app-id = "blueman-manager"; }
+          { app-id = "org.pulseaudio.pavucontrol"; }
         ];
 
         open-floating = true;

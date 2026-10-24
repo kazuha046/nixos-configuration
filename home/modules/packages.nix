@@ -24,6 +24,7 @@
       sqlite
       obs-cmd
       postman
+      qrencode
 
       # Craft Apps
       craftapps.packages.${pkgs.stdenv.hostPlatform.system}.photocraft

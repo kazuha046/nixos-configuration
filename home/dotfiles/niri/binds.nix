@@ -146,6 +146,59 @@
         action = spawn "sh" "-c" "noctalia msg panel-toggle oldirtty/color_picker:panel";
       };
 
+      "Mod+Shift+A" = {
+        hotkey-overlay.title = "Show ambient sounds panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle reaperhound/ambient-sounds:main";
+      };
+
+      "Mod+Shift+L" = {
+        hotkey-overlay.title = "Show ollama manager panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle marccvictoria/llamanager:panel";
+      };
+
+      "Mod+Shift+Q" = {
+        hotkey-overlay.title = "Show qrcode generator panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle yocraft/qrcode:panel";
+      };
+
+      "Mod+Shift+U" = {
+        hotkey-overlay.title = "Show phone connect panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle icefish/phone-connect:details";
+      };
+
+      "Mod+Shift+J" = {
+        hotkey-overlay.title = "Show gamer mode panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle nomadcxx/gamer-mode:main";
+      };
+
+      "Mod+Shift+K" = {
+        hotkey-overlay.title = "Show dns switcher panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle nightwatch75/dns-switcher:panel";
+      };
+
+      "Mod+Shift+Ctrl+N" = {
+        hotkey-overlay.title = "Show github notifications panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle hy4ri/github-notifications:panel";
+      };
+      "Mod+Shift+Ctrl+A" = {
+        hotkey-overlay.title = "Show github activity panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle alexmnrs/github-activity:calendar";
+      };
+      "Mod+Shift+Ctrl+C" = {
+        hotkey-overlay.title = "Show github companion panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle tphilippot/git_companion:main";
+      };
+
+      "Mod+Shift+Ctrl+P" = {
+        hotkey-overlay.title = "Show printers panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle andrewdems/printers:panel";
+      };
+
+      "Mod+Shift+Ctrl+M" = {
+        hotkey-overlay.title = "Show default apps manager panel";
+        action = spawn "sh" "-c" "noctalia msg panel-toggle thaer99ob/default-apps:manager";
+      };
+
       # Window management
       "Alt+Tab" = {
         hotkey-overlay.title = "Show window switcher";

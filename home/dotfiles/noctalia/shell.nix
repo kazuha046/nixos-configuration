@@ -5,6 +5,7 @@
     lang = "en";
     font_family = "TeX Gyre Heros";
     panel_anchor_bar = "default";
+    password_style = "random";
 
     avatar_path = "${config.home.homeDirectory}/Pictures/Avatars/kazuha.jpg";
 
@@ -19,6 +20,7 @@
       open_near_click_control_center = true;
     };
 
+    niri_overview_close_on_launch_enabled = true;
     greeter_sync.auto_sync = true;
     window_switcher.mru = true;
 
@@ -54,8 +56,15 @@
       }
     ];
 
-    launcher.providers = {
-      session.global = true;
+    launcher = {
+      show_app_actions = true;
+
+      providers = {
+        session = {
+          global = true;
+          prefix = "s";
+        };
+      };
     };
 
     screenshot = {
