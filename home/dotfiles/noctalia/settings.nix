@@ -108,7 +108,7 @@
       dock = {
         enabled = true;
 
-        layer = "overlay";
+        layer = "top";
 
         active_monitor_only = true;
         show_instance_count = true;
