@@ -38,7 +38,7 @@
           type = "login_box";
 
           settings = {
-            background_color = "surface_variant";
+            background_color = "surface_container";
             background_opacity = 0.5;
             background_radius = 16.0;
             center_password_text = true;

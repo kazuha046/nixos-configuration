@@ -5,7 +5,7 @@
     enable = true;
 
     settings = {
-      config_version = 15;
+      config_version = 16;
 
       calendar.enabled = true;
 
@@ -178,7 +178,7 @@
         };
 
         workspaces = {
-          empty_color = "outline";
+          empty_color = "outline_variant";
           occupied_color = "tertiary";
 
           labels_only_when_occupied = true;
