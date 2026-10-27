@@ -42,20 +42,12 @@
     }
   ];
 
-  fileSystems."/mnt/storage" = {
-    device = "/dev/disk/by-uuid/B656B71356B6D2FB";
-    fsType = "ntfs-3g";
-
+  fileSystems."/mnt/games" = {
+    device = "/dev/disk/by-uuid/cf734364-24de-401f-b1f5-4f1e60f294bc";
+    fsType = "ext4";
     options = [
+      "defaults"
       "nofail"
-      "x-systemd.automount"
-      "x-gvfs-show"
-      "uid=1000"
-      "gid=100"
-      "fmask=113"
-      "dmask=002"
-      "exec"
-      "rw"
     ];
   };
 

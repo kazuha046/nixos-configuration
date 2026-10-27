@@ -21,6 +21,7 @@
     };
 
     gtk3.bookmarks = [
+      "file:///mnt/games Games"
       "file://${config.home.homeDirectory}/Downloads"
       "file://${config.home.homeDirectory}/Documents"
       "file://${config.home.homeDirectory}/Pictures"
