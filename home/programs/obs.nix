@@ -1,17 +1,6 @@
 { pkgs, ... }:
 
 {
-  xdg.configFile."obs-studio/basic/profiles/Untitled" = {
-    source = ../../assets/obs/profile/Untitled;
-    recursive = true;
-    force = true;
-  };
-
-  xdg.configFile."obs-studio/basic/scenes/Untitled.json" = {
-    source = ../../assets/obs/Untitled.json;
-    force = true;
-  };
-
   programs.obs-studio = {
     enable = true;
 
