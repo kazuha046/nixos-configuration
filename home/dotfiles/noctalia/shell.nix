@@ -7,7 +7,7 @@
     panel_anchor_bar = "default";
     password_style = "random";
 
-    avatar_path = "${config.home.homeDirectory}/Pictures/Avatars/kazuha.jpg";
+    avatar_path = "/mnt/storage/Pictures/Avatars/kazuha.jpg";
 
     time_format = "{:%I:%M %p}";
     date_format = "%A, %d %B";

@@ -50,7 +50,7 @@
 
   programs.noctalia.settings.plugin_settings = {
     "noctalia/mpvpaper" = {
-      video_directory = "${config.home.homeDirectory}/Videos/Wallpapers";
+      video_directory = "/mnt/storage/Videos/Wallpapers";
     };
 
     "radimous/prismlauncher-instances" = {
@@ -66,6 +66,10 @@
     "yocraft/qrcode" = {
       panel_open_near_click = true;
       panel_placement = "attached";
+    };
+
+    "nightwatch75/todo" = {
+      todo_folder = "/mnt/storage/Documents/Todo";
     };
 
     "nomadcxx/gamer-mode" = {

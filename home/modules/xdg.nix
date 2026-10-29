@@ -112,10 +112,11 @@
     createDirectories = true;
 
     download = "$HOME/Downloads";
-    documents = "$HOME/Documents";
-    pictures = "$HOME/Pictures";
-    videos = "$HOME/Videos";
-    music = "$HOME/Music";
+    documents = "/mnt/storage/Documents";
+    pictures = "/mnt/storage/Pictures";
+    videos = "/mnt/storage/Videos";
+    music = "/mnt/storage/Music";
+    projects = "/mnt/storage/Projects";
     desktop = "$HOME/Desktop";
   };
 }

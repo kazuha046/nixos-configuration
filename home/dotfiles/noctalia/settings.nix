@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.noctalia = {
@@ -13,7 +13,7 @@
         enabled = true;
 
         default = {
-          path = "${config.home.homeDirectory}/Pictures/Wallpapers/raiden.jpg";
+          path = "/mnt/storage/Pictures/Wallpapers/raiden.jpg";
         };
       };
 

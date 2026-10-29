@@ -1,19 +1,65 @@
 { pkgs, config, ... }:
 
+let
+  limineWallpaper =
+    pkgs.runCommand "limine-wallpaper.png"
+      {
+        nativeBuildInputs = [ pkgs.imagemagick ];
+      }
+      ''
+        magick ${../../assets/wallpapers/wallpaper-1080p.png} \
+          -resize 1920x1080^ \
+          -gravity center \
+          -extent 1920x1080 \
+          -blur 0x8 \
+          -fill '#15121880' \
+          -colorize 35 \
+          $out
+      '';
+in
 {
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
   boot.initrd.systemd.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";
-    efiSupport = true;
-    useOSProber = false;
-    configurationLimit = 5;
+  boot.loader = {
+    timeout = 3;
 
-    theme = "${pkgs.catppuccin-grub}";
+    systemd-boot.enable = false;
+    grub.enable = false;
+
+    limine = {
+      enable = true;
+      enableEditor = false;
+
+      maxGenerations = 10;
+      resolution = "1920x1080x32";
+
+      style = {
+        wallpapers = [ limineWallpaper ];
+        wallpaperStyle = "stretched";
+        backdrop = "151218";
+
+        interface = {
+          resolution = "1920x1080";
+          branding = "NixOS  |  Kazuha046";
+          brandingColor = "D2BCFD";
+          helpColor = "CDC2DB";
+          helpColorBright = "D2BCFD";
+        };
+
+        graphicalTerminal = {
+          foreground = "E7E0E8";
+          background = "FF151218";
+          brightForeground = "EADDFF";
+          brightBackground = "FF1D1B20";
+
+          palette = "151218;FFB4AB;CDC2DB;4F3D74;5F3F9D;D2BCFD;CDC2DB;E7E0E8";
+          brightPalette = "49454E;FFDAD6;EADDFF;643B46;7B61B5;EADDFF;D2BCDB;FFFFFF";
+        };
+      };
+    };
   };
 
   boot.loader.grub.extraEntries = ''

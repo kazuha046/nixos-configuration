@@ -21,12 +21,13 @@
     };
 
     gtk3.bookmarks = [
-      "file:///mnt/games Games"
       "file://${config.home.homeDirectory}/Downloads"
-      "file://${config.home.homeDirectory}/Documents"
-      "file://${config.home.homeDirectory}/Pictures"
-      "file://${config.home.homeDirectory}/Videos"
-      "file://${config.home.homeDirectory}/Music"
+      "file:///mnt/storage/Documents"
+      "file:///mnt/storage/Pictures"
+      "file:///mnt/storage/Videos"
+      "file:///mnt/storage/Music"
+      "file:///mnt/games Games"
+      "file:///mnt/storage Storage"
     ];
   };
 

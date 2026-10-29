@@ -149,7 +149,7 @@
 
           settings = {
             background_opacity = 0.0;
-            image_path = "${config.home.homeDirectory}/Pictures/Avatars/kazuha-modified.png";
+            image_path = "/mnt/storage/Pictures/Avatars/kazuha-modified.png";
             opacity = 1.0;
           };
         };
