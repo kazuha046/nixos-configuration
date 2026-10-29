@@ -1,6 +1,14 @@
 {
   networking = {
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+
+      unmanaged = [
+        "interface-name:docker0"
+        "interface-name:veth*"
+        "interface-name:br-*"
+      ];
+    };
 
     hostName = "laptop";
 
@@ -14,11 +22,13 @@
       allowedTCPPorts = [
         53317
         7897
+        13245
       ];
 
       allowedUDPPorts = [
         53317
         7897
+        13245
       ];
 
       allowedTCPPortRanges = [
