@@ -23,6 +23,7 @@
     gtk3.bookmarks = [
       "file://${config.home.homeDirectory}/Downloads"
       "file:///mnt/storage/Documents"
+      "file:///mnt/storage/Projects"
       "file:///mnt/storage/Pictures"
       "file:///mnt/storage/Videos"
       "file:///mnt/storage/Music"

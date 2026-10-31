@@ -11,7 +11,12 @@ in
       recent-windows.enable = false;
 
       gestures = {
-        hot-corners.enable = false;
+        hot-corners = {
+          top-left = false;
+          bottom-left = false;
+          bottom-right = false;
+          top-right = false;
+        };
       };
 
       hotkey-overlay = {

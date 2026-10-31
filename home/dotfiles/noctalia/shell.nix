@@ -71,7 +71,7 @@
       directory = "${config.home.homeDirectory}/Pictures/Screenshots";
     };
 
-    screen_corners.enabled = true;
+    screen_corners.enabled = false;
 
     screen_time_enabled = true;
     polkit_agent = true;

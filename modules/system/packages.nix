@@ -44,9 +44,9 @@
       xwayland-satellite
 
       # Boot / system tools
-      os-prober
       plymouth
       efibootmgr
+      cachix
 
       # Themes
       material-cursors
@@ -58,9 +58,7 @@
 
       # Shell / dev tools
       android-tools
-      fish
       openssh
-      git
       tree
       clippy
       openssl
@@ -68,7 +66,6 @@
       rustup
       uv
       nodejs_24
-      bun
       dotnet-sdk_9
       jdk21
       jdk25
@@ -90,5 +87,10 @@
       nautilus-python
       gnome-text-editor
       mpv
+
+      # Shell / dev tools
+      bun
+      fish
+      git
     ]);
 }

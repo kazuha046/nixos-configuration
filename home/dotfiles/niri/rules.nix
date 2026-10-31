@@ -76,12 +76,17 @@
           { app-id = "chromium-browser"; }
           { app-id = "obsidian"; }
           { app-id = "^[Ss]potify$"; }
+          { app-id = "^[Ss]potify$"; }
           { app-id = "org.gnome.Evince"; }
           { app-id = "ai.storyteller.effectcraft"; }
           { app-id = "ai.storyteller.filmcraft"; }
           { app-id = "ai.storyteller.photocraft"; }
           { app-id = "ai.storyteller.vectorcraft"; }
           { app-id = "ai.storyteller.wordcraft"; }
+          { app-id = "com.obsproject.Studio"; }
+          { app-id = "code"; }
+          { app-id = "com.ayugram.desktop"; }
+          { app-id = "discord"; }
         ];
 
         open-maximized = true;

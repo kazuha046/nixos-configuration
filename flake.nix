@@ -8,6 +8,7 @@
     nixcord.url = "github:kaylorben/nixcord";
     handy.url = "github:cjpais/Handy";
     craftapps.url = "github:olafkfreund/nix-craftapps";
+    noctalia.url = "github:noctalia-dev/noctalia";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -40,7 +41,7 @@
 
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     mac-style-plymouth = {
@@ -48,14 +49,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
-
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     creamlinux-installer = {
@@ -105,13 +101,12 @@
             nixpkgs.config.allowUnfree = true;
 
             nix.settings = {
-              substituters = [
-                "https://cache.nixos.org/"
-                "https://nix-community.cachix.org"
+              extra-substituters = [
+                "https://cache.nixos-cuda.org"
               ];
 
-              trusted-public-keys = [
-                "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+              extra-trusted-public-keys = [
+                "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
               ];
             };
 

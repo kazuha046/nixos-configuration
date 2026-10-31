@@ -4,6 +4,8 @@
   imports = [
     ./hardware-configuration.nix
 
+    ../../cachix.nix
+
     ../../modules/system/boot.nix
     ../../modules/system/networking.nix
     ../../modules/system/locale.nix
