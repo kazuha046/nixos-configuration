@@ -76,7 +76,7 @@
           { app-id = "chromium-browser"; }
           { app-id = "obsidian"; }
           { app-id = "^[Ss]potify$"; }
-          { app-id = "^[Ss]potify$"; }
+          { app-id = "steam"; }
           { app-id = "org.gnome.Evince"; }
           { app-id = "ai.storyteller.effectcraft"; }
           { app-id = "ai.storyteller.filmcraft"; }
