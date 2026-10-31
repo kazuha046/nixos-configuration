@@ -66,6 +66,8 @@
           enable = true;
           target = "ru";
         };
+
+        noTrack.enable = false;
       };
     };
   };
