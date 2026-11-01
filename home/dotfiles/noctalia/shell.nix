@@ -68,7 +68,7 @@
     };
 
     screenshot = {
-      directory = "${config.home.homeDirectory}/Pictures/Screenshots";
+      directory = "/mnt/storage/Pictures/Screenshots";
     };
 
     screen_corners.enabled = false;
