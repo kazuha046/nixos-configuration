@@ -87,6 +87,7 @@
           { app-id = "code"; }
           { app-id = "com.ayugram.desktop"; }
           { app-id = "discord"; }
+          { app-id = "ONLYOFFICE"; }
         ];
 
         open-maximized = true;
