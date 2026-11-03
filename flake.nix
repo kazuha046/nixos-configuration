@@ -9,6 +9,7 @@
     handy.url = "github:cjpais/Handy";
     craftapps.url = "github:olafkfreund/nix-craftapps";
     noctalia.url = "github:noctalia-dev/noctalia";
+    koala-clash.url = "github:endotrizine/koala-clash-nix";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -113,6 +114,7 @@
             nixpkgs.overlays = [
               inputs.mac-style-plymouth.overlays.default
               inputs.niri.overlays.niri
+              inputs.koala-clash.overlays.default
 
               (final: prev: {
                 unstable = pkgs-unstable;

@@ -33,6 +33,7 @@
     ../../modules/programs/creamlinux.nix
     ../../modules/programs/steam.nix
     ../../modules/programs/aagl.nix
+    ../../modules/programs/koala-clash.nix
 
     ../../modules/services/keyring.nix
     ../../modules/services/xwayland.nix
