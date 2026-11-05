@@ -272,6 +272,24 @@
         "type": "github"
       }
     },
+    "happ": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1790409447,
+        "narHash": "sha256-7MEqSennDnUxp9fhP+SuwURk19ZwXmVqlWXWXQM2tQU=",
+        "owner": "NonExistPlayer",
+        "repo": "happ.nix",
+        "rev": "88dd973240abf6773358769ef810fd72f9599c87",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NonExistPlayer",
+        "repo": "happ.nix",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -333,18 +351,18 @@
     "koala-clash": {
       "inputs": {
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1785452206,
-        "narHash": "sha256-Qi/tKkDQUSUs9eqaAeKbSajNBXsTOpJVldlRujgHt/w=",
-        "owner": "endotrizine",
+        "lastModified": 1793894379,
+        "narHash": "sha256-ftcokhbW5NbMAyACAWuPWu29Xwqqo8hKV63PpWb2JUA=",
+        "owner": "kazuha046",
         "repo": "koala-clash-nix",
-        "rev": "0287ae25d90f99931841241d4a91736dea81ef87",
+        "rev": "f7895a3fcc7f583fb19d7f411bd08990785ed99f",
         "type": "github"
       },
       "original": {
-        "owner": "endotrizine",
+        "owner": "kazuha046",
         "repo": "koala-clash-nix",
         "type": "github"
       }
@@ -499,7 +517,7 @@
       "inputs": {
         "home-manager": "home-manager_2",
         "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "nixpkgs-ci": "nixpkgs-ci",
         "nixpkgs-packages": "nixpkgs-packages",
         "treefmt-nix": "treefmt-nix_2"
@@ -625,6 +643,22 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1785090369,
+        "narHash": "sha256-m0pDuRJG7EDo9ri+4Ksu83VsI+PlxNC9lNBfydejce4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "624af665418d3c65d544145b4d34ad696439570e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1785318670,
         "narHash": "sha256-dN6Ou5x/+23FZLEpYP3IffO+NyJFzUlGumt1uu3MMaY=",
         "owner": "NixOS",
@@ -639,7 +673,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1793633738,
         "narHash": "sha256-dKEjuquCf1NEYiTZZr6xrvTrkhAm5Q94JuEwLBzycEs=",
@@ -652,7 +686,7 @@
         "url": "https://channels.nixos.org/nixos-26.05/nixexprs.tar.zst"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_6": {
       "locked": {
         "lastModified": 1793633738,
         "narHash": "sha256-tItrb9M8eYA6WhFgmT9tpGKueri3+wRuVA952o/2xSU=",
@@ -668,7 +702,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_6": {
+    "nixpkgs_7": {
       "locked": {
         "lastModified": 1793341285,
         "narHash": "sha256-LOv16TsMYV2/8BUYnhSxHkOASe7es2ORbqMeLlZJ8Hc=",
@@ -683,7 +717,7 @@
     },
     "noctalia": {
       "inputs": {
-        "nixpkgs": "nixpkgs_6"
+        "nixpkgs": "nixpkgs_7"
       },
       "locked": {
         "lastModified": 1793880210,
@@ -727,6 +761,7 @@
         "dynamic-drpc-wayland": "dynamic-drpc-wayland",
         "flake-parts": "flake-parts",
         "handy": "handy",
+        "happ": "happ",
         "home-manager": "home-manager",
         "koala-clash": "koala-clash",
         "mac-style-plymouth": "mac-style-plymouth",
@@ -734,7 +769,7 @@
         "nix-gaming": "nix-gaming",
         "nix-index-db": "nix-index-db",
         "nixcord": "nixcord",
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_6",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "noctalia": "noctalia",
         "noctalia-greeter": "noctalia-greeter",

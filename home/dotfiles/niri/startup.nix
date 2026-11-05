@@ -51,7 +51,7 @@
     }
     {
       command = [
-        "koala-clash"
+        "happ"
       ];
     }
     {

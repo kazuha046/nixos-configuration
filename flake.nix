@@ -9,7 +9,8 @@
     handy.url = "github:cjpais/Handy";
     craftapps.url = "github:olafkfreund/nix-craftapps";
     noctalia.url = "github:noctalia-dev/noctalia";
-    koala-clash.url = "github:endotrizine/koala-clash-nix";
+    koala-clash.url = "github:kazuha046/koala-clash-nix";
+    happ.url = "github:NonExistPlayer/happ.nix";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";

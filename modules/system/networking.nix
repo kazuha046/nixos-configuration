@@ -44,8 +44,6 @@
           to = 1764;
         }
       ];
-
-      checkReversePath = false;
     };
   };
 }

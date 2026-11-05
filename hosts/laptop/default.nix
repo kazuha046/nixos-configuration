@@ -41,5 +41,6 @@
     ../../modules/services/gnome.nix
     ../../modules/services/pipewire.nix
     ../../modules/services/printer.nix
+    ../../modules/services/happ.nix
   ];
 }
