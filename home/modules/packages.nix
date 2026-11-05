@@ -10,6 +10,7 @@
     (with pkgs; [
       # Dev / IDE / Tools
       obsidian
+      opencode
       nixfmt
       nixd
       jetbrains.webstorm
@@ -94,7 +95,6 @@
     ])
     ++ (with pkgs-unstable; [
       # Dev / IDE / Tools
-      opencode
       localsend
       fzf
       qbittorrent

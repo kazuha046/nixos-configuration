@@ -1,8 +1,8 @@
 {
   programs.niri.settings.layout = {
     focus-ring = {
-      active.color = "#dfb8f6";
-      inactive.color = "#161217";
+      active.color = "#d2bcfd";
+      inactive.color = "#151218";
       urgent.color = "#ffb4ab";
     };
 
@@ -11,8 +11,8 @@
     };
 
     tab-indicator = {
-      active.color = "#dfb8f6";
-      inactive.color = "#9c09f2";
+      active.color = "#d2bcfd";
+      inactive.color = "#4f3d74";
       urgent.color = "#ffb4ab";
     };
 
@@ -20,7 +20,7 @@
       enable = true;
 
       display = {
-        color = "#dfb8f680";
+        color = "#d2bcfd80";
       };
     };
   };

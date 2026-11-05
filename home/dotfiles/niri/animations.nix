@@ -1,59 +1,49 @@
 {
   programs.niri.settings.animations = {
-    horizontal-view-movement = {
-      kind.spring = {
-        damping-ratio = 0.85;
-        stiffness = 423;
-        epsilon = 0.0001;
-      };
+    horizontal-view-movement.kind.spring = {
+      damping-ratio = 0.85;
+      stiffness = 423;
+      epsilon = 0.0001;
     };
 
-    window-movement = {
-      kind.spring = {
-        damping-ratio = 0.75;
-        stiffness = 323;
-        epsilon = 0.0001;
-      };
+    window-movement.kind.spring = {
+      damping-ratio = 0.75;
+      stiffness = 323;
+      epsilon = 0.0001;
     };
 
-    window-resize = {
-      # https://github.com/Xansidev/nirimation
-      custom-shader = ''
-        vec4 resize_color(vec3 coords_curr_geo, vec3 size_curr_geo) {
-            vec3 coords_tex_next = niri_geo_to_tex_next * coords_curr_geo;
-            vec4 color = texture2D(niri_tex_next, coords_tex_next.st);
-            return color;
-        }
-      '';
+    config-notification-open-close.kind.spring = {
+      damping-ratio = 0.65;
+      stiffness = 923;
+      epsilon = 0.001;
     };
 
-    config-notification-open-close = {
-      kind.spring = {
-        damping-ratio = 0.65;
-        stiffness = 923;
-        epsilon = 0.001;
-      };
+    screenshot-ui-open.kind.easing = {
+      duration-ms = 200;
+      curve = "ease-out-quad";
     };
 
-    screenshot-ui-open = {
-      kind.easing = {
-        duration-ms = 200;
-        curve = "ease-out-quad";
-      };
-    };
-
-    overview-open-close = {
-      kind.spring = {
-        damping-ratio = 0.85;
-        stiffness = 800;
-        epsilon = 0.0001;
-      };
+    overview-open-close.kind.spring = {
+      damping-ratio = 0.85;
+      stiffness = 800;
+      epsilon = 0.0001;
     };
 
     workspace-switch.kind.spring = {
       damping-ratio = 0.80;
       stiffness = 523;
       epsilon = 0.0001;
+    };
+
+    window-resize = {
+      # https://github.com/Xansidev/nirimation
+      custom-shader.text = ''
+        vec4 resize_color(vec3 coords_curr_geo, vec3 size_curr_geo) {
+            vec3 coords_tex_next = niri_geo_to_tex_next * coords_curr_geo;
+            vec4 color = texture2D(niri_tex_next, coords_tex_next.st);
+            return color;
+        }
+      '';
     };
 
     window-open = {
@@ -63,7 +53,7 @@
         curve = "ease-out-expo";
       };
 
-      custom-shader = ''
+      custom-shader.text = ''
         vec4 fall_from_top(vec3 coords_geo, vec3 size_geo) {
             float progress = niri_clamped_progress * niri_clamped_progress;
             vec2 coords = (coords_geo.xy - vec2(0.5, 0.0)) * size_geo.xy;
@@ -94,7 +84,7 @@
         curve = "linear";
       };
 
-      custom-shader = ''
+      custom-shader.text = ''
         vec4 fall_to_bottom(vec3 coords_geo, vec3 size_geo) {
             float progress = niri_clamped_progress * niri_clamped_progress;
             vec2 coords = (coords_geo.xy - vec2(0.5, 0.0)) * size_geo.xy;
