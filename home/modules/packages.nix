@@ -10,7 +10,6 @@
     (with pkgs; [
       # Dev / IDE / Tools
       obsidian
-      opencode
       nixfmt
       nixd
       jetbrains.webstorm
@@ -98,6 +97,7 @@
       localsend
       fzf
       qbittorrent
+      opencode
 
       # Browsers / Internet
       librewolf
