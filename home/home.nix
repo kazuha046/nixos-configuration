@@ -21,6 +21,8 @@
     ./modules/bot.nix
     ./modules/unity.nix
     ./modules/handy.nix
+    ./modules/penpot.nix
+    ./modules/open-webui.nix
 
     ./programs/vscode.nix
     ./programs/ghostty.nix
