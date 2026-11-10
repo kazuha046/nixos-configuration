@@ -26,9 +26,6 @@ in
   boot.loader = {
     timeout = 3;
 
-    systemd-boot.enable = false;
-    grub.enable = false;
-
     limine = {
       enable = true;
       enableEditor = false;
@@ -61,17 +58,6 @@ in
       };
     };
   };
-
-  boot.loader.grub.extraEntries = ''
-    menuentry "Windows 11" --class windows {
-        insmod part_gpt
-        insmod fat
-
-        search --fs-uuid --set=root 564F-7F8D
-
-        chainloader /EFI/Microsoft/Boot/bootmgfw.efi
-    }
-  '';
 
   boot.kernelPackages = pkgs.linuxPackages;
 
