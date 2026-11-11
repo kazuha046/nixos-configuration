@@ -51,7 +51,9 @@
     }
     {
       command = [
-        "happ"
+        "sh"
+        "-c"
+        "sleep 5 && happ"
       ];
     }
     {
