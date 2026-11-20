@@ -118,6 +118,7 @@
       # Gaming
       steam-run
       gamescope
+      r2modman
 
       # Mods / tweaks
       gamemode
