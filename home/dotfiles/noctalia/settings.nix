@@ -5,7 +5,7 @@
     enable = true;
 
     settings = {
-      config_version = 16;
+      config_version = 20;
 
       calendar.enabled = true;
 
