@@ -9,5 +9,9 @@
     localNetworkGameTransfers.openFirewall = true;
 
     package = pkgs-unstable.steam;
+
+    extraCompatPackages = with pkgs-unstable; [
+      proton-ge-bin
+    ];
   };
 }

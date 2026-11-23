@@ -1,4 +1,9 @@
-{ pkgs, config, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  config,
+  ...
+}:
 
 let
   limineWallpaper =
@@ -59,7 +64,7 @@ in
     };
   };
 
-  boot.kernelPackages = pkgs.linuxPackages;
+  boot.kernelPackages = pkgs-unstable.linuxPackages_latest;
 
   boot.kernelParams = [
     "quiet"
