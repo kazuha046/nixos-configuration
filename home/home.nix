@@ -31,7 +31,6 @@
     ./programs/mpv.nix
     ./programs/lsd.nix
     ./programs/fastfetch.nix
-    ./programs/minecraft.nix
     ./programs/obs.nix
     ./programs/nvim.nix
     ./programs/fzf.nix

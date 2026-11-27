@@ -81,7 +81,6 @@
       gnome-control-center
       gnome-online-accounts
       sushi
-      snapshot
       geary
       webp-pixbuf-loader
       nautilus-python

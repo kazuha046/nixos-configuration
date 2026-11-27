@@ -87,10 +87,6 @@
         terminal = false;
         mimeTypes = [ "application/x-desktop" ];
       })
-
-      (writeShellScriptBin "pineconemc" ''
-        exec "$HOME/Applications/PineconeMC-Linux-x86_64.AppImage" "$@"
-      '')
     ])
     ++ (with pkgs-unstable; [
       # Dev / IDE / Tools
@@ -119,6 +115,17 @@
       steam-run
       gamescope
       r2modman
+
+      (pineconemc.override {
+        gamemodeSupport = true;
+
+        additionalPrograms = [ mangohud ];
+
+        jdks = [
+          jdk21
+          jdk25
+        ];
+      })
 
       # Mods / tweaks
       gamemode
