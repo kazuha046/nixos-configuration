@@ -1,6 +1,10 @@
+{ pkgs-unstable, ... }:
+
 {
   programs.ghostty = {
     enable = true;
+
+    package = pkgs-unstable.ghostty;
 
     settings = {
       confirm-close-surface = false;

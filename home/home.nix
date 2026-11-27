@@ -8,6 +8,7 @@
     inputs.dynamic-drpc-wayland.homeManagerModules.default
     inputs.nixcord.homeModules.nixcord
     inputs.handy.homeManagerModules.default
+    inputs.kazuha-bot.homeManagerModules.default
 
     ./modules/packages.nix
     ./modules/desktop.nix
@@ -18,7 +19,6 @@
     ./modules/fish.nix
     ./modules/spicetify.nix
     ./modules/ddsw.nix
-    ./modules/bot.nix
     ./modules/unity.nix
     ./modules/handy.nix
     ./modules/penpot.nix
@@ -37,6 +37,7 @@
     ./programs/easy-effects.nix
     ./programs/librewolf.nix
     ./programs/cordial.nix
+    ./programs/bot.nix
 
     ./dotfiles/noctalia/default.nix
     ./dotfiles/niri/default.nix

@@ -1,10 +1,12 @@
-{ pkgs, ... }:
+{ pkgs-unstable, ... }:
 
 {
   programs.mpv = {
     enable = true;
 
-    scripts = [ pkgs.mpvScripts.modernx ];
+    package = pkgs-unstable.mpv.override {
+      scripts = [ pkgs-unstable.mpvScripts.modernx ];
+    };
 
     config = {
       osc = "no";

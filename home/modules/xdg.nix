@@ -52,8 +52,6 @@
       "x-scheme-handler/https" = [ "librewolf.desktop" ];
       "x-scheme-handler/about" = [ "librewolf.desktop" ];
       "x-scheme-handler/webcal" = [ "org.gnome.Calendar.desktop" ];
-      "x-scheme-handler/mailto" = [ "org.gnome.Geary.desktop" ];
-      "message/rfc822" = [ "org.gnome.Geary.desktop" ];
       "application/xhtml+xml" = [ "librewolf.desktop" ];
       "application/x-desktop" = [ "dex.desktop" ];
       "inode/directory" = [ "org.gnome.Nautilus.desktop" ];

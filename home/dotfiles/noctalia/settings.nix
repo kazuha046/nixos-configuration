@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs-unstable, ... }:
 
 {
   programs.noctalia = {
@@ -236,7 +236,7 @@
           scroll_down = "volume-down";
           scroll_up = "volume-up";
           left = "panel-toggle launcher";
-          middle = "exec ${pkgs.ghostty}/bin/ghostty";
+          middle = "exec ${pkgs-unstable.ghostty}/bin/ghostty";
           back = "media previous";
           forward = "media next";
         };

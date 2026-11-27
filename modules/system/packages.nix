@@ -37,7 +37,6 @@
       ffmpegthumbnailer
       file-roller
       poppler
-      unar
       loupe
 
       # Wayland / X11 bridge
@@ -47,9 +46,6 @@
       plymouth
       efibootmgr
       cachix
-
-      # Themes
-      material-cursors
 
       # Security / auth
       polkit
@@ -70,7 +66,6 @@
       jdk21
       jdk25
       go
-      qemu
       gh
     ])
     ++ (with pkgs-unstable; [
@@ -81,11 +76,9 @@
       gnome-control-center
       gnome-online-accounts
       sushi
-      geary
       webp-pixbuf-loader
       nautilus-python
       gnome-text-editor
-      mpv
 
       # Shell / dev tools
       bun

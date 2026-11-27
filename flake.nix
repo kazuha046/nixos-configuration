@@ -27,20 +27,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-index-db = {
-      url = "github:Mic92/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nix-gaming = {
-      url = "github:fufexan/nix-gaming";
-
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-      };
-    };
-
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -61,6 +47,11 @@
       owner = "Novattz";
       repo = "creamlinux-installer";
       flake = false;
+    };
+
+    kazuha-bot = {
+      url = "github:kazuha046/Kazuha7777Bot";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     dynamic-drpc-wayland = {

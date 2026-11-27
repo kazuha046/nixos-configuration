@@ -12,9 +12,6 @@
       obsidian
       nixfmt
       nixd
-      jetbrains.webstorm
-      jetbrains.pycharm
-      jetbrains.rust-rover
       jetbrains.datagrip
       android-studio
       libnotify
@@ -91,12 +88,10 @@
     ++ (with pkgs-unstable; [
       # Dev / IDE / Tools
       localsend
-      fzf
       qbittorrent
       opencode
 
       # Browsers / Internet
-      librewolf
       tor-browser
       chromium
       ayugram-desktop
@@ -104,7 +99,6 @@
 
       # GUI system tools
       networkmanagerapplet
-      blueman
       mission-center
       scrcpy
 
@@ -128,13 +122,11 @@
       })
 
       # Mods / tweaks
-      gamemode
       mangohud
       vkbasalt
 
       # Media / wallpapers
       mpvpaper
-      easyeffects
       pavucontrol
       gimp
     ]);
