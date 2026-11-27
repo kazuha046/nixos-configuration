@@ -1,4 +1,9 @@
-{ pkgs, lib, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  lib,
+  ...
+}:
 
 let
   extra-path = with pkgs; [
@@ -12,7 +17,7 @@ let
     # Add any extra libraries you want accessible to Rider here
   ];
 
-  rider = pkgs.jetbrains.rider.overrideAttrs (attrs: {
+  rider = pkgs-unstable.jetbrains.rider.overrideAttrs (attrs: {
     postInstall = ''
       # Wrap rider with extra tools and libraries
       mv $out/bin/rider $out/bin/.rider-toolless
